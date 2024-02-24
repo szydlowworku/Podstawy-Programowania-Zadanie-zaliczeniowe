@@ -19,7 +19,7 @@ public class Program
         }
         
         public static void Game(){
-            Random random = new();
+            Random random = new Random();
             int randomNumber = random.Next(0, 21); 
             //Console.WriteLine(randomNumber);
             
@@ -57,8 +57,6 @@ public class Program
         public static int CompareAnswerToTarget(int target, int ans){
             if (target == ans) {
                 Console.WriteLine("ggs");
-                Console.ReadKey();
-                Environment.Exit(1);
             } 
             else if ((target > ans) & (Math.Abs(target - ans) > 5)){
                 Console.WriteLine("a lot more");
